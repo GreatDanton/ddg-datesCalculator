@@ -70,8 +70,8 @@ h1, h2, h3, h4, h5, p {
   cursor: pointer;
   border: 2px solid #303030;
   border-radius: 40px;
-  display: flex;
   margin: 10px auto;
+  display: block;
   transition: all 0.3s ease-in-out;
 }
 
