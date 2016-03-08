@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Lato';
+}
+
+.container {
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-flow: column;
+  padding: 20px 20px;
+  border: 1px solid #e9e9e9;
+}
+
+.dates-container {
+  padding: 40px 0;
+}
+
+.date-box {
+  padding: 5px;
+}
+
+.row {
+  display: inline-flex;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.half {
+  display: flex;
+  width: 50%;
+}
+
+.centered {
+  text-align: center;
+  justify-content: center;
+}
+
+.flow-column {
+  flex-flow: column;
+}
+
+.input-integers {
+  width: 42px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-year {
+  width: 50px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-calculate {
+  color: #000;
+  width: 150px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 2px solid #303030;
+  border-radius: 40px;
+  display: flex;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-calculate:hover {
+  color: #fff;
+  background-color: #303030;
+}
+
+.countdown-container {
+  display: flex;
+}
+
+.time {
+  background-color: #303030;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 40px;
+  margin: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+}

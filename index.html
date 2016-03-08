@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Lato&subset=latin-ext' rel='stylesheet' type='text/css'>
+<script src="jquery.js"></script>
+<link rel="stylesheet" href="main.css">
+<script src="js.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="dates-container">
+
+    <div class="row">
+      <div class="half flow-column centered">
+        <h2>Start Date</h2>
+        <div class="row centered">
+          <div class="date-box">
+            <h4> Day </h4>
+            <input id="day-start" class="input-integers" autocomplete="off" type="number" pattern="[0-9]*" min="1" maxlength="2" max="31" placeholder="dd"/>
+          </div>
+
+          <div class="date-box">
+          <h4> Month </h4>
+          <input id="month-start" class="input-integers" autocomplete="off" type="number" pattern="[0-9]*" min="1" maxlength="2" max="12" placeholder="mm"/>
+          </div>
+
+          <div class="date-box">
+            <h4> Year </h4>
+          <input id="year-start" class="input-year" autocomplete="off" type="number" pattern="[0-9]*" min="1" maxlength="4" placeholder="yyyy"/>
+          </div>
+
+        </div><!-- end of row -->
+      </div>
+
+      <div class="half flow-column centered">
+        <h2>End Date</h2>
+        <div class="row centered">
+          <div class="date-box">
+       <h4> Day </h4>
+     <input id="day-end" class="input-integers" autocomplete="off" type="number" pattern="[0-9]*" min="1" maxlength="2" max="31" placeholder="dd"/>
+     </div>
+
+     <div class="date-box">
+       <h4> Month </h4>
+     <input id="month-end" class="input-integers" autocomplete="off" type="number" pattern="[0-9]*" min="1" maxlength="2" max="12" placeholder="mm"/>
+     </div>
+
+     <div class="date-box">
+       <h4> Year </h4>
+     <input id="year-end" class="input-year" autocomplete="off" type="number" pattern="[0-9]*" min="0" maxlength="4" placeholder="yyyy"/>
+     </div>
+
+        </div><!-- end of row -->
+      </div>
+    </div>
+
+    <button class="btn-calculate"> Calculate </button>
+
+    <div class="list"></div>
+  </div> <!-- end of dates container -->
+
+  <div class="countdown-container">
+    <div class="time">
+      <p>Years</p>
+      <h1 id="years"> 00</h1>
+    </div>
+  <!--  <div class="time">
+      <p>Months</p>
+      <h1> 12</h1>
+    </div>-->
+    <div class="time">
+      <p>Days</p>
+      <h1 id="days"> 00</h1>
+    </div>
+    <div class="time">
+      <p>Hours</p>
+      <h1 id="hours"> 00</h1>
+    </div>
+    <div class="time">
+      <p>Minutes</p>
+      <h1 id="minutes"> 00 </h1>
+    </div>
+    <div class="time">
+      <p>Seconds</p>
+      <h1 id="seconds"> 00 </h1>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
