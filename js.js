@@ -139,10 +139,10 @@ $('.btn-calculate').click(function() {
 
   // collects data
   var startDay = parseInt($('#day-start').val());
-  var startMonth = parseInt($('#month-start').val());
+  var startMonth = parseInt($('#month-start').val())-1;
   var startYear = parseInt($('#year-start').val());
   var endDay = parseInt($('#day-end').val());
-  var endMonth = parseInt($('#month-end').val());
+  var endMonth = parseInt($('#month-end').val())-1;
   var endYear = parseInt($('#year-end').val());
 
 // if end year is lower than start year, switch values
