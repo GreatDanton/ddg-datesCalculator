@@ -78,12 +78,12 @@ function exactTime(startingDay, finalDay) {
 
 
 // Countdown function
-function countdown() {
+function countdown(startingDay, finalDay) {
 
-  var startingDay = new Date();
-  var finalDay = new Date(2019, 10, 19);
-  startingDay = startingDay.getTime()/1000;
-  finalDay = finalDay.getTime()/1000;
+  // var startingDay = new Date();
+  // var finalDay = new Date(2019, 10, 19);
+  // startingDay = startingDay.getTime()/1000;
+  // finalDay = finalDay.getTime()/1000;
 
 function calculate() {
 // increase for 1second for each interval
@@ -191,6 +191,7 @@ $('.btn-calculate').click(function() {
   var finalDay = new Date(endYear, endMonth, endDay);
   startingDay = startingDay.getTime()/1000;
   finalDay = finalDay.getTime()/1000;
+  var now = new Date().getTime()/1000;
 
   var time = exactTime(startingDay, finalDay);
   console.log(time);
@@ -212,6 +213,10 @@ $('.btn-calculate').click(function() {
                   '<p>days: ' + onlyDays + '</p>' +
                   '<p>years: ' + onlyYears + '</p>');
   console.log(years, days, hours, minutes, seconds);
+
+  if (finalDay > now) {
+    countdown(now, finalDay);
+  }
 });
 
 // countdown();
